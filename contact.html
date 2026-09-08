@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+    .bg-purple {
+      background-color: blueviolet;
+    }
+
+    .nav-item:hover {
+      background-color: red;
+      border: 2px solid yellow;
+
+    }
+  </style>
+  </head>
+
+  <body>
+    <!-- Header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-purple" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="image/class banner rect.jpeg" alt="Logo" width="40" height="40"
+              class="d-inline-block align-text-top">
+            ChhatrapatiClasses</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page"
+                  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About
+                  Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="photo.html">Photo</a></li>
+                  <li><a class="dropdown-item" href="video.html">Video</a></li>
+                  <li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active bg-danger border border-warning"
+                  href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="reviews.html">Reviews</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search"
+                  placeholder="Search" aria-label="Search" />
+                <button class="btn btn-danger" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--Header End-->
+      <main>
+        <section class="py-5 bg-light">
+          <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+              <div class="col-lg-8">
+                <h2 class="fw-bold">Get In Touch</h2>
+                <p class="text-muted">Have questions or feedback? Fill out the
+                  form below and our team will get back to you
+                  shortly.</p>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Contact Info Sidebar -->
+              <div class="col-lg-4">
+                <div class="card border-0 shadow-sm h-100 p-4">
+                  <h4 class="fw-bold mb-4">Contact Details</h4>
+
+                  <div class="d-flex mb-3">
+                    <i class="bi bi-geo-alt-fill text-primary fs-4 me-3"></i>
+                    <div>
+                      <h6 class="mb-0 fw-bold">Address</h6>
+                      <small class="text-muted">Chhatrapati Classes Mehakar</small>
+                    </div>
+                  </div>
+
+                  <div class="d-flex mb-3">
+                    <i class="bi bi-telephone-fill text-primary fs-4 me-3"></i>
+                    <div>
+                      <h6 class="mb-0 fw-bold">Phone</h6>
+                      <small class="text-muted">+1 (555) 000-1234</small>
+                    </div>
+                  </div>
+
+                  <div class="d-flex mb-3">
+                    <i class="bi bi-envelope-fill text-primary fs-4 me-3"></i>
+                    <div>
+                      <h6 class="mb-0 fw-bold">Email</h6>
+                      <small class="text-muted">chhatrapaticlasses@gmail.com</small>
+                    </div>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="bi bi-clock-fill text-primary fs-4 me-3"></i>
+                    <div>
+                      <h6 class="mb-0 fw-bold">Class Time</h6>
+                      <small class="text-muted">Mon - Sat: 6:00 AM - 7:00 
+                        PM</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div class="col-lg-8">
+                <div class="card border-0 shadow-sm p-4">
+                  <form action="#" method="POST">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label for="name" class="form-label fw-bold">Student
+                          Name</label>
+                        <input type="text" class="form-control" id="name"
+                          placeholder="John Doe" required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="email" class="form-label fw-bold">Student
+                          Email</label>
+                        <input type="email" class="form-control" id="email"
+                          placeholder="name@example.com" required>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="subject"
+                          class="form-label fw-bold">Subject</label>
+                        <input type="text" class="form-control" id="subject"
+                          placeholder="Inquiry about Membership"
+                          required>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="message"
+                          class="form-label fw-bold">Message</label>
+                        <textarea class="form-control" id="message" rows="5"
+                          placeholder="Write your message here..."
+                          required></textarea>
+                      </div>
+
+                      <div class="col-12">
+                        <button type="submit"
+                          class="btn btn-primary btn-lg w-100">Submit
+                          Form</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          .social{
+            font-size: 40px;
+            margin-left: 15px;
+            
+          }
+          .bi-youtube{
+            color: red;
+          }
+          .bi-facebook{
+            color: #0165e0;
+          }
+          .bi-linkedin{
+            color: #0A66C2;
+          }
+        </style>
+        <section class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+              <h2>Social Media</h2>
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="bi bi-youtube social"></i>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="bi bi-facebook social"></i>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <i class="bi bi-linkedin social"></i>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    </body>
+
+  </html>
